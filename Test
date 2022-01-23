@@ -1,0 +1,45 @@
+public class Test {
+    public void test(){
+        Customer julia = new Customer("Julia", 125, 35);
+        Customer mads = new Customer("Mads", 50, 19);
+        Customer martin = new Customer("Martin", 500, 27);
+
+        Product strawberries = new Product("Strawberries", 15);
+        Product lemonCake = new Product("Lemon Cake", 35);
+        Product cocaCola = new Product("Coca Cola", 5);
+        Product redBull = new Product("Red Bull", 15);
+        Product monster = new Product("Monster", 15);
+        Product broccoli = new Product("Broccoli", 15);
+        Product carrot = new Product("Carrot", 8);
+        Product chicken = new Product("Chicken", 25);
+
+        System.out.println("The first customer's name is: " + julia.getName() + ". She is " + julia.getAge() + " years old and enters the shop with "
+                + julia.getMoney() + ".");
+        System.out.println("The second customer's name is: " + mads.getName() + ". She is " + mads.getAge() + " years old and enters the shop with "
+                + mads.getMoney() + ".");
+        System.out.println("The first customer's name is: " + martin.getName() + ". She is " + martin.getAge() + " years old and enters the shop with "
+                + martin.getMoney() + ".");
+        System.out.println("The Customers are all shopping in the shop... we will return with what they bought and how much money they have left, once they leave.");
+
+        julia.addToShoppingCart(strawberries);
+        julia.addToShoppingCart(strawberries);
+        julia.addToShoppingCart(strawberries);
+        julia.addToShoppingCart(lemonCake);
+        julia.addToShoppingCart(cocaCola);
+        mads.addToShoppingCart(redBull);
+        mads.addToShoppingCart(redBull);
+        mads.addToShoppingCart(monster);
+        martin.addToShoppingCart(broccoli);
+        martin.addToShoppingCart(carrot);
+        martin.addToShoppingCart(chicken);
+        martin.addToShoppingCart(chicken);
+
+        julia.correctTotalMoney();
+        mads.correctTotalMoney();
+        martin.correctTotalMoney();
+
+        System.out.println(julia.getName() + " bought " + julia.getShoppingCartProducts() + " her total is now: " + julia.getMoney());
+        System.out.println(mads.getName() + " bought " + mads.getShoppingCartProducts() + " his total is now: " + mads.getMoney());
+        System.out.println(martin.getName() + " bought " + martin.getShoppingCartProducts() + " his total is now: " + martin.getMoney());
+    }
+}
