@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args){
+        Test test = new Test();
+        test.test();
+    }
+}
+
+
+        /*
+        Julia 35 years old wants to buy 3 strawberries, a lemon cake and a coca cola.
+
+        Mads 19 years old wants to buy 2 red bull and 1 monster.
+
+        Martin 27 years old wants to buy 1 broccoli, 1 carrot and 2 packs of chicken.
+         */
