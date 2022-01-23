@@ -1,0 +1,20 @@
+public class Product {
+
+    private String productName;
+    private Integer productCost;
+
+    public Product(String name, Integer cost){
+        this.productName = name;
+        this.productCost = cost;
+    }
+
+    public String getProductName(){
+        return productName;
+
+    }
+
+    public Integer getProductCost(){
+
+        return productCost;
+    }
+}
