@@ -14,11 +14,9 @@ public class Customer {
     }
 
     public void correctTotalMoney(){
-        Integer walletTotal = 0;
         for(int i = 0; i < shoppingCart.size(); i++){
-            walletTotal = (walletTotal + shoppingCart.get(i).getProductCost());
+            totalMoney = totalMoney - shoppingCart.get(i).getProductCost();
         }
-        totalMoney = walletTotal;
     }
 
     public String getShoppingCartProducts(){
